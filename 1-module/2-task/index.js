@@ -11,7 +11,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-	if (name !== undefined && name.includes(' ') === 0 && name.length >= 4) {
+	if (name !== undefined && name.includes(' ') === false && name.length >= 4) {
 		 return true;
 	} else { 
 		return false;
