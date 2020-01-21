@@ -1,6 +1,7 @@
 /**
  * Эту функцию трогать не нужно
  */
+'use strict';
 function print(text) {
   console.log(text);
 }
@@ -10,6 +11,11 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
+	if (name !== undefined && name.includes(' ') === false && name.length >= 4) {
+		 return true;
+	} else { 
+		return false;
+	}
 }
 
 function sayHello() {
