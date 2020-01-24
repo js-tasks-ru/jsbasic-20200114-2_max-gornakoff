@@ -1,8 +1,8 @@
 'use strict';
 let calculator = {
 	read(a,b){
-	  this.a = +prompt('Введите A :');
-	  this.b = +prompt('Введите B :');
+	  this.a = a;
+	  this.b = b;
   	},
 	sum(){
 		return this.a + this.b;
@@ -12,8 +12,6 @@ let calculator = {
 	},	
 	
 };
-
-calculator.read();
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
