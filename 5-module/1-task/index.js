@@ -20,7 +20,6 @@ function highlight(table) {
 		}
 		if(lastCellsAtt===null){	
 			lastCell.parentElement.setAttribute('hidden','');
-			firstRow.removeAttribute('hidden');
 		}
 		if(gender.innerHTML==='m'){
 			gender.parentElement.classList.add('male');
